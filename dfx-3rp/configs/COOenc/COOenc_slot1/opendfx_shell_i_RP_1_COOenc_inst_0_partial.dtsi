@@ -1,0 +1,11 @@
+/dts-v1/;
+/plugin/;
+/ {
+	fragment@0 {
+		target = <&fpga_PR1>;
+		__overlay__ {
+			firmware-name = "opendfx_shell_i_RP_1_COOenc_inst_0_partial.bit.bin";
+			partial-fpga-config;
+		};
+	};
+};
